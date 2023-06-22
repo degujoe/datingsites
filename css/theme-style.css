@@ -1,0 +1,3259 @@
+/*
+Theme Name: DSE
+*/
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #0e3150
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: 700
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+body {
+    color: #0e3150;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+    font-style: normal
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none
+}
+
+@media (min-width:980px) {
+    .content-wrapper {
+        max-width: 1120px;
+        margin: 0 auto
+    }
+    .mobile-right {
+        display: inline-block;
+        width: 69%;
+        position: relative;
+    }
+}
+
+
+@media (max-width:1150px) {
+    .content-wrapper {
+        padding: 0px 10px;
+    }
+}
+
+
+.content-wrapper p {
+	margin-top: 0px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.content-wrapper h2, .content-wrapper h3 {
+	margin-bottom: 5px;
+    font-size: 21px;
+}
+.text_align_left {
+    text-align: left
+}
+
+.text_align_right {
+    text-align: right
+}
+
+.text_color_white {
+    color: #fff
+}
+
+.button {
+    background: #5db918!important;
+    background: linear-gradient(180deg,#5db918,#198f10)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5db918",endColorstr="#198f10",GradientType=1)!important;
+    display: flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 150px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    outline: none;
+    color: #fff !important;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 40%);
+    position: relative;
+}
+
+.button .fa {
+    margin-left: 10px;
+}
+
+.button:hover {
+    background: #198f10!important;
+    background: linear-gradient(180deg,#198f10,#5db918)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#198f10",endColorstr="#5db918",GradientType=1)!important;
+}
+
+.button:active {
+    background: #F22361
+}
+
+.view-text {
+    max-width: 200px;
+    margin: 20px auto 20px auto;
+}
+
+.scroll {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 4px 10px rgba(107, 91, 237, .25);
+    border: 1px solid rgba(107, 91, 237, .25);
+    border-radius: 100em;
+    bottom: 32px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: calc(50% - 25px);
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    outline: none;
+    opacity: 0;
+    visibility: hidden
+}
+
+@media (min-width:980px) {
+    .scroll {
+        display: none
+    }
+}
+
+.scroll_visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.scroll:hover {
+    border-color: #031e77
+}
+
+.header {
+    background: #fff;
+    box-shadow: 0px 2px 5px -1px rgb(0 0 0 / 15%);
+    position: relative;
+    z-index: 99;
+}
+
+.header .nav li {
+    display: none;
+}
+
+@media (max-width:980px) {
+    .header__wrapper {
+        text-align: center;
+    }
+}
+
+@media (min-width:980px) {
+    .header {
+        display: block
+    }
+
+    .header .nav li {
+        display: block;
+    }
+}
+
+@media (min-width:980px) {
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /*padding:0 54px*/
+        padding: 10px 0px 5px 0px;
+    }
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 8px 32px;
+    cursor: pointer;
+    margin-top: -8px;
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    position: relative
+}
+
+.nav li:not(:last-child) {
+    margin-right: 16px
+}
+
+.nav li:not(:first-of-type):before {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 2px;
+    border-radius: 99px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    transition: .4s cubic-bezier(.25, .8, .25, 1)
+}
+
+.nav li a {
+    color: #F22361;
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    font-weight: 700
+}
+
+.nav li:hover a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 45%;
+    margin: 5px auto 0px auto;
+    border-bottom: 3px solid #F22361;
+}
+
+.nav li.current_page_item a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 45%;
+    margin: 5px auto 0px auto;
+    border-bottom: 3px solid #F22361;
+}
+
+
+/*
+.nav__item_active a {
+    color: #0e3150
+}
+
+.nav__item:hover {
+    background: #70d73d
+}
+
+.nav__item:hover:before {
+    opacity: 0
+}
+.nav__item:hover a {
+    color: #0e3150
+}
+.nav__item:active {
+    background: #8fe067
+}
+.nav__item:active:before {
+    opacity: 0
+}
+.nav__item:active a {
+    color: #0e3150
+}
+*/
+
+.mobile-header {
+    background: #031e77;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /*position: fixed;*/
+    position: absolute;
+    flex-flow: row wrap;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #dedbf6
+}
+
+@media (min-width:980px) {
+    .mobile-header {
+        display: none
+    }
+}
+
+.mobile-header__logo {
+    cursor: pointer;
+}
+
+.header__logo {
+    margin: -8px 0px;
+}
+
+@media (max-width:980px) {
+    .header__logo {
+        margin: 6px 0px -3px 0px;
+        display: block;
+    }
+}
+
+.mobile-header__button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: transparent;
+    outline: none
+}
+
+.mobile-header__burger {
+    display: none
+}
+
+.mobile-header__burger_visible {
+    display: block
+}
+
+.mobile-navigation {
+    list-style-type: none;
+    z-index: 100;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1), padding-top .2s ease-in-out, opacity .2s ease-in-out;
+    width: 100%;
+    background: #031e77;
+    margin: 0;
+    position: relative
+}
+
+.mobile-navigation_open {
+    padding: 24px 0;
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height .5s ease-in-out, padding-top .2s ease-in-out;
+    left: 0
+}
+
+.mobile-navigation__item {
+    margin-top: 24px
+}
+
+.mobile-navigation__link {
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s cubic-bezier(.25, .8, .25, 1)
+}
+
+.mobile-navigation__link:hover {
+    color: #F22361;
+    text-decoration: none
+}
+
+.rights {
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    height: 0
+}
+
+@media (min-width:980px) {
+    .rights {
+        height: auto;
+        position: absolute;
+        padding: 24px;
+        width: 490px;
+        background: #fff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+        border-radius: 4px;
+        z-index: 2;
+        color: #0e3150;
+        right: 50px;
+        top: 225px
+    }
+    .rights_visible {
+        visibility: visible;
+        opacity: 1
+    }
+    .rights__close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer
+    }
+    .rights__title {
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 33px;
+        font-weight: 700;
+        text-align: center
+    }
+    .rights__descr {
+        font-weight: 600;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: -.04em
+    }
+}
+
+.promo {
+    /*background: url(../images/img-Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    color: #0e3150;
+    margin-top: 58px;
+    padding: 24px 16px;
+    position: relative;*/
+}
+
+.promo-wrapper {
+    color: #0e3150;
+    /* margin-top: 58px;*/
+    padding: 30px 0px 50px 0px;
+    position: relative;
+    line-height: 26px;
+    min-height: 150px;
+}
+.promo-wrapper .line {
+    font-size: 15px;
+    font-weight: bold;
+}
+.promo-wrapper .usps {
+    margin: -5px 0px 10px 0px;
+    padding-left: 25px;
+}
+.promo-wrapper .line .fas {
+    color: #4BBB8B;
+}
+
+.promo-wrapper p {
+    font-size: 18px;
+    max-width: 550px;
+}
+
+@media (max-width:1050px) {
+    .promo-wrapper p {
+        max-width: 450px;
+    }
+}
+
+.websites {
+    width: 100%;
+    float: left;
+    padding: 20px 0px;
+}
+.websites ul {
+    width: 450px;
+    padding: 0px;
+    list-style: none;
+}
+.websites ul li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.websites ul li a {
+    color: #000;
+    font-size: 13px;
+}
+
+.websites ul img {
+    height: 12px;
+    margin-top: 4px;
+    float: left;
+    margin-right: 5px;
+}
+
+.footer-icons {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0px;
+    max-height: 80px;
+}
+@media (max-width:980px) {
+    .websites h3 {
+        padding: 0px 10px;
+    }
+    .websites ul {
+        width: 100%;
+        padding: 0px 10px;
+    }
+}
+
+@media (min-width:980px) {
+    .promo {
+        /*  padding: 24px 54px;*/
+        margin-top: 0
+    }
+}
+
+.promo__rights {
+    display: none
+}
+
+@media (min-width:980px) {
+    .promo__rights {
+        display: block;
+        position: absolute;
+        right: 32px;
+        bottom: 8px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: .4s cubic-bezier(.25, .8, .25, 1);
+        font-size: 12px;
+        opacity: .5
+    }
+    .promo__rights:hover {
+        opacity: 1
+    }
+    .promo__rights:active {
+        color: #F22361
+    }
+}
+
+.promo__title {
+    color: #F22361;
+    line-height: 22px;
+    font-weight: 900;
+    font-size: 21px;
+    margin: 0px 0px 5px 0px;
+}
+.promo-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+}
+@media (min-width:980px) {
+    .promo__title {
+        font-size: 26px;
+        margin-bottom: 10px
+    }
+    .promo-wrapper {
+        background: none;
+    }
+}
+
+.promo__list {
+    margin: 16px 0 0;
+    font-weight: 700;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 0
+}
+
+@media (min-width:980px) {
+    .promo__list {
+        font-size: 16px
+    }
+}
+
+.promo__item:not(:last-child) {
+    margin-bottom: 6px
+}
+.bookmakers {
+    padding: 0px 10px;
+}
+.bookmakers__item {
+    padding: 10px 9px;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    align-items: center;
+    box-shadow: 0 5px 15px -10px #000;
+    border: 2px solid;
+    border-color: #F22361;
+    float: left;
+    position: relative;
+}
+
+@media (min-width:980px) {
+    .bookmakers {
+        padding: 0px;
+    }
+
+    .bookmakers__item {
+        border: 1px solid;
+        border-color: #eee;
+        /*padding: 10px 24px*/
+    }
+}
+
+.bookmakers__item_primary {
+    border: 2px solid;
+    border-color: #F22361;
+}
+.bookmakers__item {
+    transition: all 0.3s ease;
+}
+.bookmakers__item:hover {
+    border: 2px solid;
+    border-color: #F22361;
+    box-shadow: 5px 35px -5px rgba(0, 0, 0, 0.5);
+    transform: translate3d(0px, -2px, 0px);
+}
+
+/* .bookmakers__item_primary:hover {
+    background: #031e77 !important;
+    color: #fff !important;
+} 
+
+.bookmakers__item_offer {
+    border: 1px solid;
+    border-color: #F22361;
+    background: #f9e1e9;
+    color: #0e3150
+}
+
+.bookmakers__item_offer:hover {
+    border: 1px solid;
+    border-color: #F22361;
+    background: #f9e1e9 !important;
+    color: #0e3150 !important;
+} */
+
+
+.bookmakers__item_primary .bookmakers__preview .bookmakers__img {
+    border-radius: 10px !important;
+}
+
+@media (min-width:980px) {
+    .bookmakers__left {
+        display: none
+    }
+}
+
+.bookmakers__button {
+    width: 100%
+}
+
+@media (min-width:980px) {
+    .bookmakers__button {
+        width: auto
+    }
+}
+
+.bookmakers__preview {
+    border-radius: 10px;
+    /*background: #f9f9f9;*/
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* height: 83px;*/
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px
+}
+
+@media (min-width:980px) {
+    .bookmakers__preview {
+        height: 114px;
+        margin-bottom: 0;
+        padding: 0;
+        width: 300px
+    }
+}
+
+.bookmakers__recommend {
+    position: absolute;
+    color: #F22361;
+    font-size: 10px;
+    line-height: 130%;
+    font-weight: 700;
+    margin-top: -30px;
+    /*right: -98px*/
+}
+
+.bookmakers__recommend_desktop {
+    display: none
+}
+
+@media (min-width:980px) {
+    .bookmakers__recommend_mobile {
+        display: none
+    }
+    .bookmakers__recommend_desktop {
+        font-size: 12px;
+        display: flex;
+        margin-top: -28px;
+        /*margin-top: -48px;*/
+        /* right: -116px*/
+        position: relative;
+    }
+}
+
+.bookmakers__recommend-icon {
+    position: relative;
+    top: 18px;
+    width: 12px
+}
+
+@media (min-width:980px) {
+    .bookmakers__recommend-icon {
+        top: 2px;
+        width: 20px
+    }
+}
+
+.bookmakers__img {
+    /*max-height: 68px*/
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media (min-width:980px) {
+    .bookmakers__img {
+        max-height: 100%;
+        max-width: 220px;
+    }
+}
+
+@media (min-width:980px) {
+    .bookmakers__rank_mobile {
+        display: none
+    }
+}
+
+.bookmakers__rank_desktop {
+    display: none
+}
+
+@media (min-width:980px) {
+    .bookmakers__rank_desktop {
+        display: block;
+        min-height: 20px;
+    }
+
+    .center_num {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        width: 25%;
+    }
+}
+
+.bookmakers__stars {
+    position: relative;
+}
+
+.bookmakers__stars .fas {
+    color: #ffb400;
+}
+
+.bookmakers__nums {
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+@media (min-width:980px) {
+    .bookmakers__nums {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .bookmakers__stars {
+        text-align: center;
+    }
+}
+
+.bookmakers__title {
+    font-weight: 700;
+    /* max-width: 160px*/
+}
+
+@media (min-width:980px) {
+    .bookmakers__title {
+        font-weight: 300;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .bookmakers__title .line {
+        font-style: normal;
+    }
+}
+
+.bookmakers__title p {
+	margin: 0px 0px 5px 0px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.bookmakers__title .line {
+    font-size: 14px;
+}
+.bookmakers__title .fas {
+    color: #4BBB8B;
+}
+
+@media (min-width:980px) {
+    .bookmakers__title {
+        max-width: unset
+    }
+}
+
+.bookmakers__descr {
+    font-weight: 700;
+    /* max-width: 160px*/
+}
+
+@media (min-width:980px) {
+    .bookmakers__descr {
+        max-width: unset;
+        position: relative
+    }
+}
+
+@media (min-width:0px) {
+    .bookmakers__descr_desktop {
+        font-size: 20px;
+        line-height: 130%;
+        font-weight: 900
+    }
+}
+
+.bookmakers__left {
+    width: 100%;
+}
+
+.bookmakers__right {
+    text-align: left;
+    line-height: 1.8em;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+@media (min-width:980px) {
+    .bookmakers__right {
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+        width: 350px;
+    }
+}
+
+.bookmakers__actions {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.desktop-image {
+    display: none;
+}
+
+@media (min-width:980px) {
+    .bookmakers__actions {
+        margin-top: 0px;
+    }
+
+    .bookmakers__actions .button {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+
+    .desktop-image {
+        display: block;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        border-radius: 500px;
+        right: 0px;
+        top: -30px;
+        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+}
+
+.bookmakers__link {
+    font-weight: 300;
+    width: 100%;
+    float: left;
+    align-items: center;
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    margin-top: 10px;
+    color: #0e3150;
+    text-align: center;
+    font-size: 13px;
+}
+
+.bookmakers__link:hover {
+    color: #F22361
+}
+
+.bookmakers__link:active {
+    color: #F22361
+}
+
+.bookmakers__link-icon {
+    margin-left: 6px
+}
+
+.footer {
+    padding: 32px 16px;
+    text-align: center;
+    margin-top: 46px
+}
+
+@media (min-width:980px) {
+    .footer__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+}
+
+.footer__descr {
+    color: #a2a2a2;
+    margin-bottom: 0
+}
+
+@media (min-width:980px) {
+    .footer__descr {
+        max-width: 1034px;
+        margin: 0 auto
+    }
+}
+
+.footer__bottom {
+    margin-top: 32px
+}
+
+@media (min-width:980px) {
+    .footer__bottom {
+        display: flex;
+        align-items: center;
+        max-width: 60%;
+        margin: 32px auto 0;
+        justify-content: center
+    }
+}
+
+.footer__age {
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    border-radius: 100em;
+    margin: 16px auto
+}
+
+@media (min-width:980px) {
+    .footer__age {
+        margin: 0 78px 0 0
+    }
+}
+
+.footer__logo {
+    margin-bottom: 6px
+}
+
+.titles {
+    display: none
+}
+
+@media (min-width:980px) {
+    .titles {
+        display: block;
+        display: grid;
+        grid-template-columns: 184px 272.84px 109.14px 150px;
+        grid-gap: 72px;
+        padding: 16px 24px;
+        max-width: 980px;
+        margin: 0 auto
+    }
+}
+
+.titles__item {
+    font-weight: 700;
+    text-align: center
+}
+
+.article {
+    /*margin-top: 48px;*/
+    padding: 20px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+
+.article__heading {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 160%;
+    margin: 0
+}
+
+.article__text {
+    margin: 24px 0
+}
+
+.blog {
+    margin-top: -5px;
+    padding: 32px 16px 0px 16px;
+}
+
+@media (min-width:980px) {
+    .blog {
+        margin-top: -5px;
+        padding: 0
+    }
+}
+
+.blog__title {
+    font-weight: 900;
+    margin: 0
+}
+
+@media (min-width:980px) {
+    .blog__title {
+        font-size: 40px;
+        line-height: 55px
+    }
+}
+
+.blog__info {
+    color: #a1a1a1;
+    margin: 24px 0
+}
+
+@media (min-width:980px) {
+    .blog__info {
+        /*font-size: 24px;*/
+        line-height: 130%
+    }
+}
+
+.blog__date {
+    margin-right: 44px
+}
+
+.blog__img {
+    height: auto;
+    width: 60%
+}
+
+.blog__text {
+    text-align: left;
+    line-height: 160%;
+    margin: 24px 0 0
+}
+
+
+/* thiyag */
+
+.foooter_main {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 30px 0px;
+    width: 100%;
+    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 15%);
+    background: #029688;
+    color: #fff;
+}
+
+.foooter_main ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+.foooter_main ul li {
+    float: left;
+    margin: 5px 0px;
+    padding: 0px;
+    width: 100%;
+    ;
+    list-style-type: none;
+}
+.cats ul {
+    width: 100%;
+    float: left;
+}
+.cats ul li {
+    border: 1px solid #F22361;
+    background: #fff;
+    color: #F22361;
+    padding: 5px 5px 5px 10px;
+    border-radius: 3px;
+    margin: 0px 5px 5px 0px;
+    width: calc(50% - 5px);
+    text-align: center;
+}
+.foooter_main .cats ul li a {
+    float: left;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+.foooter_main ul li a {
+    color: #fff;
+}
+
+.foooter_main ul li a:hover {
+    color: #fff;
+}
+
+.footer_title {
+    font-size: 1.2rem !important;
+    font-weight: 900;
+    margin: 0px 0px 10px 0px;
+}
+
+.disclosuresection {
+    background-color: rgba(247, 249, 255, 0.95);
+    padding: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.footer_disclosuresection {
+    background-color: #4e4a4a;
+    padding: 10px;
+    text-align: center;
+}
+
+.disclosure_text {
+    text-align: center;
+    float: left;
+    width: 90%;
+    margin-right: 5%;
+}
+
+.footer__descr {
+    color: #fff !important;
+}
+
+.logofooter {
+    clear: both;
+}
+
+.footer_socials {
+    float: left !important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    list-style-type: none;
+}
+
+.footer_socials_item {
+    color: #fff;
+    font-size: 1.2rem;
+    -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    color: #cdcdcd;
+    margin-bottom: 5px;
+}
+
+.copyright a {
+    color: #1d1c1c;
+}
+
+.footer-col {
+    width: 33.33%;
+    float: left;
+    position: relative;
+    padding: 5px 15px 0px 0px;
+}
+
+.footer-full {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 5px 15px 0px 0px;
+    margin-top: 30px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.footer-full .footer_title {
+    color: #fff;
+}
+@media (max-width:970px) {  
+    .footer-col {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-full {
+        padding: 10px;
+        margin-top:0px;
+    }
+}
+.content-container {
+    background-color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.bookmakers__wrapper {
+    width: 100%;
+    float: left;
+    padding: 0px 10px 0px 10px;
+}
+
+.counter_col {
+    /*background-color: #70d73d;*/
+    background-color: #F22361;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    padding: 4px 0 0 0;
+}
+
+.counter_col_hot {
+    /*background-color: #70d73d;*/
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    padding: 0px 0 0 0;
+}
+
+.submenu {
+    background: #f22362;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.subnav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.subnavcontainer {
+    width: 100%;
+    float: left;
+}
+
+.nav__sub__item {
+    color: #fff;
+    padding: 8px 32px;
+}
+
+.nav__sub__item:hover a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin: 1px auto 0px auto;
+    border-bottom: 3px solid #fff !important;
+}
+
+.nav__sub__item__active a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin: 1px auto 0px auto;
+    border-bottom: 3px solid #fff !important;
+}
+
+.nav__item__active__right a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25%;
+    margin: 5px auto 0px 80%;
+    border-bottom: 3px solid #70d73d;
+}
+
+/* .bookmakers__item:hover {
+    background-color: #f5f5f5;
+}
+
+.bookmakers__item:hover .counter_col {
+    background-color: #031e77;
+    color: #fff;
+} */
+
+.bookmakers-wrap {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+}
+.bookmakers-wrap .content-wrapper {
+    padding: 10px 5px 10px 5px;
+    display: table;
+    border-radius: 10px;
+    background: rgba(247, 249, 255, 0.95);
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 10%);
+}
+.blog-container {
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.btn_arrow {
+    float: left;
+    padding-left: 6%;
+    display: block;
+    position: absolute;
+}
+
+.vignettes {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.vignettes_content {
+    width: 33.33%;
+    height: 280px;
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px 10px 0px;
+    float: left;
+}
+
+.vignettes_content:last-child {
+    padding: 0px 0px 10px 0px;
+}
+
+.vignettes_content .firstrow {
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.vignettes_content .firstrow .col-left {
+    width: 33.33%;
+    float: left;
+}
+
+.vignettes_content .firstrow .col-left img {
+    width: 100%;
+    max-height: 150px;
+}
+
+.vignettes_content .firstrow .col-right {
+    width: 66.66%;
+    float: left;
+    padding: 0px 0px 0px 10px
+}
+
+.vignettes_content .firstrow .col-right h3 {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+}
+
+.vignettes_content .firstrow .col-right p {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    margin: 3px 0px;
+}
+
+.vignettes_content:last-child .firstrow .col-right p {
+    /*  padding-right: 10px;*/
+}
+
+.vignettes_content .secondrow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vignettes_content .secondrow .button {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+.vignettes_content .secondrow .link {
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    margin-top: 10px;
+    color: #0e3150;
+    margin: auto;
+    padding: 10px 0px 0px 5px;
+}
+
+.vignettes_content .secondrow .button .btn_arrow {
+    margin: 0;
+    float: right;
+    text-align: end;
+    position: absolute;
+    display: flex;
+    right: 25px;
+}
+
+.vignettes_content .secondrow .link:hover {
+    color: #F22361
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+@media (min-width:980px) {
+    .vignettes_content .secondrow .button .btn_arrow {
+        margin: 0;
+        float: right;
+        text-align: end;
+        position: absolute;
+        display: flex;
+        right: 25px;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width:970px) {
+    .blog__img {
+        height: auto;
+        width: 100%
+    }
+
+    .promo-wrapper {
+        padding: 30px 10px 30px 20px;
+    }
+    /*.bookmakers__link {
+        display: none;
+    }*/
+    .bookmakers__button {
+        padding: 6px 20px 6px 20px;
+        height: auto;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .btn_arrow {
+        /* float: right;     */
+        /* padding: 0 50px; */
+        display: block !important;
+        position: absolute;
+        width: 20%;
+        text-align: right;
+        /* right: 15%; */
+        margin-left: 28%;
+        z-index: 1;
+    }
+    @supports (-webkit-touch-callout: none) {
+        /* CSS specific to iOS devices */
+        .btn_arrow {
+            margin-top: -25px;
+            margin-left: 26% !important;
+        }
+        .modalactions .button .btn_arrow {
+            padding-top: 4px !important;
+        }
+        .vignettes_content .secondrow .button .btn_arrow {
+            margin-top: -25px !important;
+        }
+    }
+    .submenu {
+        display: none;
+    }
+    .blog {
+        margin-top: 50px;
+    }
+
+    .bookmakers__right {
+        width: 100%;
+    }
+    .bookmakers__rank_mobile {
+        position: relative;
+    }
+    .bookmakers__stars {
+        width: 50%;
+        margin-top: -8px;
+    }
+    .bookmakers__nums {
+        margin-top: -3px !important;
+        width: 50%;
+        text-align: right;
+        padding: 0px 10px 20px 0px;
+    }
+    .vignettes_content {
+        width: 100%;
+        padding: 0px 10px 0px 10px !important;
+        margin-bottom: 18px;
+    }
+    .vignettes_content:last-child {
+        margin-bottom: 12px;
+    }
+    .vignettes_content .firstrow {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    .vignettes_content .firstrow .col-left img {
+        max-height: 150px;
+    }
+    .vignettes_content .secondrow .button {
+        width: 100%;
+        padding: 23px 20px 20px 20px;
+        height: auto;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .modal {
+        width: 100% !important;
+    }
+    .vignettes {
+        margin-bottom: 0px !important;
+    }
+}
+
+.modal {
+    background: #031e77;
+    color: #fff;
+    width: 450px;
+    padding: 15px;
+}
+
+.modaltext h3 {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.modaltext p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.modalactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.modalactions .link {
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    transition: .4s cubic-bezier(.25, .8, .25, 1);
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.modalactions .button {
+    width: 100%;
+}
+
+.modalactions .button .btn_arrow {
+    display: block !important;
+    position: absolute;
+    width: 20%;
+    text-align: right;
+    /* right: 15%; */
+    margin-left: 28%;
+}
+
+.modal a.close-modal[class*="icon-"] {
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 1.7;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    background: #900;
+    border: 2px solid #fff;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -o-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blocker {
+    z-index: 9999;
+}
+
+.dateline {
+	font-size: 13px;
+	margin-top: -30px;
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.review h1 {
+    margin-top: 0px;
+    font-size: 26px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.review h1 span {
+    font-weight: 300;
+}
+
+.review .left {
+	width: calc(75% - 50px);
+	float: left;
+	padding-bottom: 0px;
+}
+
+.review .left .intro {
+    padding: 0px 10px;
+}
+
+.review .inner {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    float: left;
+}
+
+.review .top {
+    width: 100%;
+    float: left;
+    margin: 30px 0px 20px 0px;
+    color: #0e3150;
+    position: relative;
+    z-index: 99;
+}
+
+.review .top .top-left {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+}
+
+.review .top .top-right {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    padding: 5px 0px 5px 20px;
+    border-left: 1px dashed #d2d2d2;
+    font-style: italic;
+}
+
+.review .top .bookmakers__stars-mobile {
+    display: block !important;
+}
+
+.review .user-review {
+    border-top: 1px solid #eee;
+    padding: 20px 0px;
+    width: 100%;
+    float: left;
+}
+
+.users-reviews h3 {
+    margin-top: 0px;
+}
+
+.review .review-top {
+    width: 100%;
+    float: left;
+}
+
+.review .review-top .foto{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-right: 20px;
+    float: left;
+}
+
+.review .review-top .bookmakers__stars {
+    width: calc( 100% - 100px);
+    float: left;
+    margin-top: 12px;
+    text-align: left;
+}
+
+.review .review-top .bookmakers__stars span {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.review .review-top .review-name {
+    font-weight: bold;
+}
+
+.review .review-content {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.review .review-title {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+
+.review .bookmakers__wrapper-small {
+	position: relative;
+	box-shadow: 0px 2px 8px rgb(0 0 0 / 10%);
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+.review .bookmakers__wrapper-small .bookmakers__preview {
+    width: 100px;
+    float: left;
+    height: 81px;
+    padding-right: 10px;
+}
+
+.review .bookmakers__wrapper-small .bookmakers__descr_desktop {
+    font-size: 16px;
+}
+
+.review .bookmakers__wrapper-small .sidebar-right {
+    width: calc(100% - 100px);
+    float: left;
+    padding-left: 10px;
+}
+
+.review .bookmakers__wrapper-small .button {
+	height: 35px;
+	font-size: 14px;
+}
+.review .counter_col {
+	right: -10px;
+	left: auto;
+	background: #031e77;
+}
+.review .bookmakers__stars {
+	float: left;
+    margin-right: 10px;
+}
+.review .bookmakers__button {
+	width: 100%;
+}
+.review .bookmakers__nums {
+	float: left;
+	margin: 0px 0px 0px 5px;
+	font-size: 14px;
+}
+.review .right {
+	width: 25%;
+	float: right;
+	padding: 30px 0px 20px 0px;
+}
+
+.review .right .cur-review {
+	background: #fff;
+	position: relative;
+	box-shadow: 0px 2px 8px rgb(0 0 0 / 10%);
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.review .right .cur-review img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+.review .right .cur-review .button {
+	margin-top: 5px;
+	width: 100%;
+}
+.review .voornadelen {
+	width: 100%;
+	background: #f9e1e9;
+	float: left;
+	margin-bottom: 20px;
+}
+.review .voornadelen h3 {
+	margin: 0px 0px 10px 0px;
+	border-bottom: 1px solid #F22361;
+}
+.review .voornadelen .line {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.review .voornadelen .voordelen {
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+.review .voornadelen .nadelen {
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+.review .left img {
+	max-width: 100%;
+	height: auto;
+}
+.review .left .image {
+    position: relative;
+}
+
+.review .left .image .logo {
+    background: #fff;
+    padding: 15px; 
+    border-radius: 30px;
+    margin: auto;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translate3d(-50%, 0px, 0px);
+}
+.review .left .image .logo img {
+    max-height: 50px;
+}
+
+@media (max-width:1024px) {  
+    .review .left {
+        width: 100%;
+    }
+
+    .review .right {
+        width: 100%;
+    }
+
+    .review h1 {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width:500px) {  
+    .review .voornadelen .voordelen, .review .voornadelen .nadelen { 
+        width: 100%;
+    }
+}
+
+.clear {
+	clear: both;
+}
+
+.review .dateline {
+	margin-top: 0px;
+}
+
+@media (max-width:700px) { 
+    .review .dateline {
+        width: 100%;
+        float: left;
+    }
+
+    .review .bookmakers__stars {
+        width: 100%;
+        float: left;
+    }
+}
+
+.reviews-users {
+    width: 100%;
+    float: left;
+    padding: 20px 0px 50px 0px;
+}
+
+.reviews-users h3 {
+    padding: 0px 10px;
+}
+
+.review-user {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    color: #0e3150;
+}
+
+@media (max-width:970px) { 
+    .review-user {
+        width: 50%;
+    }
+}
+
+@media (max-width:525px) { 
+    .review-user {
+        width: 100%;
+    }
+}
+
+
+.review-user .inner {
+    width: 100%;
+    float: left;
+    background: #fff;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+}
+
+.review-user .top {
+    padding: 15px;
+    width: 100%;
+    float: left;
+    background: rgba(247, 249, 255, 0.95);
+}
+
+.review-user .top img.foto {
+    border-radius: 100%;
+    width: 60px;
+    float: left;
+    margin-right: 10px;
+    border: 2px solid #F22361;
+}
+.review-user .bookmakers__stars {
+    float: left;
+    display: block;
+}
+.review-user .top span {
+    float: left;
+    margin-top: 10px;
+    width: calc(100% - 80px);
+    font-weight: bold;
+}
+
+.review-user .content {
+    padding: 20px 15px;
+    width: 100%;
+    float: left;
+}
+
+.link {
+    padding: 15px;
+    border-top: 1px solid rgba(247, 249, 255, 0.95);
+    float: left;
+    height: 62px;
+}
+.link img {
+    max-width: 70px;
+    max-height: 30px;
+    float: left;
+    margin-right: 20px;
+}
+
+.link span {
+    float: left;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #F22361;
+}
+.bookmakers-title {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 0px 10px 0px;
+    text-align: center;
+}
+
+.bookmakers-title .x1 {
+    width: 31%;
+    float: left;
+}
+.bookmakers-title .x2 {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+.bookmakers-title .x3 {
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.bookmakers-title .x4 {
+    width: 35%;
+    float: left;
+    text-align: center;
+}
+
+.x1 {
+    width: 31%;
+    float: left;
+}
+.x2 {
+    width: 40%;
+    float: left;
+}
+.x3 {
+    width: 25%;
+    float: left;
+}
+.x4 {
+    width: 35%;
+    float: left;
+}
+
+.faq {
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 50px;
+    width: 100%;
+    float: left;
+}
+.faq h4 {
+    width: 100%;
+    text-align: left;
+    color: #F22361;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.faq-item {
+    width: 100%;
+}
+@media (max-width:970px) {  
+    .review .right {
+        display: none;
+    }
+
+    .faq-item {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px 0px;
+    }
+
+    .bookmakers-title {
+        display: none;
+    }
+
+    .button .fa {
+        margin-left: 10px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 12px 15px;
+        height: 100%;
+        background: hsla(0,0%,100%,.2);
+        font-size: 18px;
+    }
+
+    .x1, .x2, .x3, .x4 {
+        width: 100%;
+    }
+}
+.faq-item .quest {
+    font-weight: bold;
+    border-bottom: 2px solid #0e3150;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.faq-item .quest .fas {
+    float: right;
+}
+
+.faq-item .answer {
+    padding: 10px 0px;
+    width: 100%;
+    float: left;
+    display: none;
+}
+
+.faq-item.open .answer {
+    display: block;
+}
+
+.faq-item.open .fas {
+    transform: rotate(45deg);
+}
+
+.partner-top {
+    width: 100%;
+    float: left;
+}
+
+.partner-top  .bookmakers__descr{
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 900;
+    float: left;
+    width: 100%;
+}
+
+.partner-top .bookmakers__nums {
+    float: right;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 900;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.bookmakers__stars-mobile {
+    display: none;
+}
+
+.promo-mobile {
+    display: none;
+}
+
+.free {
+    display: none;
+}
+
+.subline {
+    display: none;
+}
+
+.ribbon{
+    width:150px;
+    height:150px;
+    overflow:hidden;
+    position:absolute;
+    display: none;
+    z-index: 999;
+    -webkit-transform: scale(0.75);
+       -moz-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+         -o-transform: scale(0.75);
+            transform: scale(0.75);
+}
+.ribbon:after,.ribbon:before{
+    position:absolute;
+    z-index:-1;
+    content:"";
+    display:block
+}
+.ribbon.pink span{
+    background:#ed0164
+}
+.ribbon.pink:after,.ribbon.pink:before{
+    border:5px solid #ed0164
+}
+.ribbon.yellow span{
+    background:#ff8b00
+}
+.ribbon.yellow:after,.ribbon.yellow:before{
+    border:5px solid #ff8b00
+}
+.ribbon.blue span{
+    background:#014BA6;
+}
+.ribbon.blue:after,.ribbon.blue:before{
+    border:5px solid #5172FF;
+}
+.ribbon span{
+    position:absolute;
+    display:block;
+    width:225px;
+    padding:15px 0;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    color:#fff;
+    font:700 14px/1 Lato,sans-serif;
+    text-shadow:0 1px 1px rgba(0,0,0,.2);
+    text-transform:uppercase;
+    text-align:center
+}
+.ribbon-top-left{
+    top:-10px;
+    left:-10px
+}
+.ribbon-top-left:after,.ribbon-top-left:before{
+    border-top-color:transparent;
+    border-left-color:transparent
+}
+.ribbon-top-left:before{
+    top:0;
+    right:0
+}
+.ribbon-top-left:after{
+    bottom:0;
+    left:0
+}
+.ribbon-top-left span{
+    right:-25px;
+    top:34px;
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg)
+}
+.ribbon-top-right{
+    top:-27px;
+    right:-26px
+}
+.ribbon-top-right:after,.ribbon-top-right:before{
+    border-top-color:transparent;
+    border-right-color:transparent
+}
+.ribbon-top-right:before{
+    top:0;
+    left:0
+}
+.ribbon-top-right:after{
+    bottom:0;
+    right:0
+}
+.ribbon-top-right span{
+    left:-25px;
+    top:30px;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg)
+}
+.ribbon-bottom-left{
+    bottom:-10px;
+    left:-10px
+}
+.ribbon-bottom-left:after,.ribbon-bottom-left:before{
+    border-bottom-color:transparent;
+    border-left-color:transparent
+}
+.ribbon-bottom-left:before{
+    bottom:0;
+    right:0
+}
+.ribbon-bottom-left:after{
+    top:0;
+    left:0
+}
+.ribbon-bottom-left span{
+    right:-25px;
+    bottom:30px;
+    -webkit-transform:rotate(225deg);
+    transform:rotate(225deg)
+}
+.ribbon-bottom-right{
+    bottom:-23px;
+    right:-23px
+}
+.ribbon-bottom-right:after,.ribbon-bottom-right:before{
+    border-bottom-color:transparent;
+    border-right-color:transparent
+}
+.ribbon-bottom-right:before{
+    bottom:0;
+    left:0
+}
+.ribbon-bottom-right:after{
+    top:0;
+    right:0
+}
+.ribbon-bottom-right span{
+    left:-25px;
+    bottom:30px;
+    -webkit-transform:rotate(-225deg);
+    transform:rotate(-225deg)
+}
+
+.intro {
+    width: 100%;
+    padding: 50px 15px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.specs {
+    padding:20px 10px;
+    width: 100%;
+    float: left;
+}
+
+.specs h3 {
+    margin-bottom: 20px;
+}
+
+.specs .stars {
+    float: right;
+    font-size: 15px;
+    color: #ffb400;
+}
+
+.specs .line {
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+
+.intro-wrap {
+    text-align: center;
+    width: 400px;
+    margin-left: -200px;
+    left: 50%;
+    position: relative;
+    float: left;
+}
+
+.specs .specs-left {
+    width: 50%;
+    padding-right: 20px;
+    float: left;
+}
+
+.specs .specs-right {
+    width: 50%;
+    padding-left: 20px;
+    float: left;
+}
+.specs .specs-left span.text {
+    float: right;
+}
+.specs .specs-right .fas.fa-check-circle {
+    color: #5db918;
+}
+
+.specs .specs-right .fas.fa-times-circle {
+    color: #f00;
+}
+
+.registraties .fas {
+    float: right;
+}
+
+.items {
+    background: #F1F2FC;
+    width: 100%;
+    float: left;
+    padding: 50px;
+}
+
+.items .col {
+    width: 33.33%;
+    padding: 0px 20px 10px 20px;
+    float: left;
+    text-align: center;
+}
+
+.items p {
+    line-height: 24px;
+}
+
+.items h3 {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.items img {
+    height: 60px;
+}
+
+.button-mobile {
+    display: none;
+}
+
+.header__logo img {
+    height: 55px;
+}
+
+.gr .promo__title {
+    line-height: 32px;
+}
+
+.gr .bookmakers__title .line {
+    font-size:  12px;
+}
+
+@media (max-width:450px) {
+    .intro-wrap {
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
+    }
+
+    .intro-wrap br {
+        display: none;
+    }
+}
+
+@media (max-width:980px) {
+
+    .content-wrapper {
+        padding:  0px;
+    }
+
+    .es .promo-mobile img {
+        width: 85%;
+    }
+
+    .button-mobile {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        max-width: 10000px;
+        margin: 0px;
+        border-radius: 0px;
+        line-height: 50px;
+        text-align: center;
+        z-index: 9999;
+        height: 50px;
+    }
+    
+    .specs .specs-left, .specs .specs-right {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+
+    .specs .specs-left h3, .specs .specs-right h3 {
+        margin-top: 0px;
+    }
+
+    .items .col {
+        width: 100%;
+        padding: 0px 20px 20px 20px;
+        float: left;
+        text-align: center;
+    }
+
+    .bookmakers__descr.bookmakers__descr_desktop {
+        display: none;
+    }
+
+    .bookmakers__stars {
+        margin-bottom: 5px;
+    }
+
+    .bookmakers-wrap .content-wrapper {
+        padding: 2px 7px 0px 7px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        background: none;
+    }
+
+    .bookmakers__link {
+        display: none;
+    }
+
+    .bookmakers__wrapper {
+        padding: 0px;
+    }
+
+    .bookmakers {
+        padding: 0px 5px;
+    }
+
+    .bookmakers__preview {
+        padding: 0px;
+    }
+
+
+    .promo-wrapper .usps {
+        display: none;
+    }
+
+    .ribbon {
+        display: block;
+    }
+    
+    .promo__title { 
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .bookmakers__item {
+        padding: 15px 10px;
+    }
+
+
+    .promo-wrapper {
+        width: calc(100% - 145px);
+        float: left;
+    }
+
+    .promo-wrapper .intro-text {
+        display: none;
+    }
+
+    .promo-wrapper .subline {
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+    }
+
+    .promo-mobile {
+        width: 140px;
+        float: left;
+        display: block;
+        position: absolute;
+        right: 0px;
+    }
+
+    .promo-mobile img {
+        width: 100%;
+        margin-top: 5px;
+        margin-right:15px;
+        float: right;
+        height: auto;
+    }
+
+    .mobile-left {
+        width: 40%;
+        padding-right: 8px;
+        float: left;
+    }
+
+    .mobile-right {
+        width: 60%;
+        padding-left: 8px;
+        float: left;
+        border-left: 1px dashed #d2d2d2;
+    }
+
+    .bookmakers__subline {
+        font-size: 14px;
+        color: #6C757E;
+        font-style: italic;
+        padding-right: 20px;
+        line-height: 19px;
+    }
+
+    .bookmakers__subline.first {
+        padding-right: 60px;
+    }
+
+    .bookmakers .dateline {
+        display: none;
+    }
+
+    .bookmakers__stars-mobile {
+        display: block;
+        font-size: 12px;
+        color: #6C757E;
+        width: 100%;
+        padding: 0px;
+        float: left;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .bookmakers__stars-mobile span {
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+    }
+
+    .bookmakers__stars-mobile .fas {
+        font-size: 12px;
+    }
+
+    .partner-top .bookmakers__nums {
+        width: 100%;
+        float: left;
+        padding: 0px 5px 0px 0px;
+        color: #000;
+        position: relative;
+        z-index: 999;
+        margin: 10px 0px !important;
+        font-size: 14px;
+    }
+    .partner-top .bookmakers__nums a {
+        color: #000;
+        font-weight: 300;
+        text-decoration: underline;
+        padding-right: 20px;
+    }
+    .partner-top .bookmakers__nums span {
+        float: left;
+    }
+
+    .promo-wrapper {
+        padding-bottom: 5px;
+    }
+
+    .bookmakers__preview {
+        height: 85px !important;
+        margin-bottom: 0px;
+    }
+
+    .bookmakers__preview img {
+        width: 100%;
+        height: auto;
+    }
+
+    .free {
+        background: #cee8f7;
+        width: 100%;
+        float: left;
+        font-size: 11px;
+        padding: 3px;
+        text-align: center;
+        color: #04446b;
+        display: block;
+        font-weight: bold;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .bookmakers__title {
+        display: none;
+    }
+
+    .bookmakers__actions {
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .bookmakers__button {
+        font-size: 14px;
+    }
+
+    .button .fa {
+        padding: 5px 8px;
+    }
+
+    .bookmakers__button {
+        padding: 6px 15px 6px 0px;
+    }
+
+    .items {
+        padding: 25px;
+    }
+
+    .gr .bookmakers__subline {
+        font-size:  12px !important;
+    }
+
+    .gr .promo__title {
+        font-size:  17px;
+    }
+
+    .gr .promo-wrapper p {
+        font-size:  14px;
+    }
+}
+
+.es a.button {
+  background-image : linear-gradient(rgb(0,123,199), rgb(0,123,199)) !important;
+}
+
+@media (max-width:400px) {
+    .es .promo__title {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 5px
+    }
+
+    .es .promo-wrapper p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .es .ribbon {
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+
+    .es .ribbon-top-right {
+        top: -36px;
+        right: -36px;
+    }
+
+    .es .bookmakers__subline.first{
+        padding-right: 40px;
+    }
+
+    .promo {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    .promo .promo-mobile {
+        bottom: -2px;
+    }
+
+    .gr .bookmakers__button {
+        font-size:  10px !important;
+    }
+}
+
+@media (max-width:340px) {
+    .bookmakers__button {
+        font-size: 13px;
+    }
+
+    .button .fa {
+        padding: 5px 6px;
+    }
+
+    .bookmakers__subline {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width:339px) {
+    .promo__title {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 5px
+    }
+
+    .promo-wrapper p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.check {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    display: none;
+    transform: translate(0%, -50%);
+}
+
+.check span {
+    font-weight: bold;
+    width: 100%;
+    float:  left;
+    margin-bottom: 10px;
+}
+
+.check .button {
+    width: auto;
+    min-width: 0px;
+    top:  0px;
+    left:  0px;
+    position: relative;
+    display: inline-grid;
+    margin:  0px 5px;
+    transform: translate(0%, 0%);
+}
+
+.check a.button.btn-yes {
+    background: #5db918!important;
+}
+
+.check a.button.btn-no {
+    background: #f00 !important;
+}
+
+@media (max-width:981px) {
+    .check {
+        position: relative;
+        top:  0px;
+        transform: translate(0%, 0%);
+    }
+}
+
+body.usa {
+    background: #431b38;
+    color: #000;
+    background: linear-gradient(to bottom, #431b38, #1a0714);
+}
+
+body.usa .promo-wrapper {
+    color: #fff;
+}
+
+body.usa .promo-wrapper .usps {
+    padding-left:  0px;
+}
+
+body.usa .promo-wrapper .usps .fas {
+    color: #F22361;
+}
+
+body.usa .header {
+    background: #431b38;
+    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+body.usa .bookmakers-wrap .content-wrapper {
+    padding:  0px;
+    background: none;
+}
+
+body.usa .bookmakers__wrapper {
+    padding:  0px;
+}
+
+body.usa .bookmakers-title {
+    display: none;
+}
+
+body.usa .dateline {
+    color:  #fff;
+}
+
+body.usa .items {
+    color: #fff;
+    background: #431b38;
+}
+
+body.usa .intro-wrap {
+    color: #fff;
+}
+
+body.usa .foooter_main {
+    background: #1a0714;
+}
+
+.bookmakers__item .num {
+    display: none;
+}
+
+body.usa .num {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    top:  -5px;
+    left: -5px;
+    background: #F22361;
+    color:  #fff;
+    z-index: 999;
+    line-height: 35px;
+    text-align: center;
+    font-size:  21px;
+    font-weight: bold;
+    box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:981px) {
+    body.usa .bookmakers__wrapper {
+        padding:  0px 5px;
+    }
+
+    body.usa .promo-wrapper {
+        background: none;
+    }
+}
+
+
+body.usa, body.uk2 {
+    background: #431b38;
+    color: #000;
+    background: linear-gradient(to bottom, #431b38, #1a0714);
+}
+
+body.usa .promo-wrapper, body.uk2 .promo-wrapper{
+    color: #fff;
+}
+
+body.usa .promo-wrapper .usps, body.uk2 .promo-wrapper .usps {
+    padding-left:  0px;
+}
+
+body.usa .promo-wrapper .usps .fas, body.uk2 .promo-wrapper .usps .fas{
+    color: #F22361;
+}
+
+body.usa .header, body.uk2 .header{
+    background: #431b38;
+    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+body.usa .bookmakers-wrap .content-wrapper, body.uk2 .bookmakers-wrap .content-wrapper{
+    padding:  0px;
+    background: none;
+}
+
+body.usa .bookmakers__wrapper, body.uk2 .bookmakers__wrapper {
+    padding:  0px;
+}
+
+body.usa .bookmakers-title, body.uk2 .bookmakers-title {
+    display: none;
+}
+
+body.usa .dateline, body.uk2 .dateline{
+    color:  #fff;
+}
+
+body.usa .items, body.uk2 .items{
+    color: #fff;
+    background: #431b38;
+}
+
+body.usa .intro-wrap, body.uk2 .intro-wrap{
+    color: #fff;
+}
+
+body.usa .foooter_main, body.uk2 .foooter_main{
+    background: #1a0714;
+}
+
+body.usa .num, body.uk2 .num {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    top:  -5px;
+    left: -5px;
+    background: #F22361;
+    color:  #fff;
+    z-index: 999;
+    line-height: 35px;
+    text-align: center;
+    font-size:  21px;
+    font-weight: bold;
+    box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.uk2 .content-container {
+    background: none;
+    color: #fff;
+}
+
+@media (max-width:981px) {
+    body.usa .bookmakers__wrapper, body.uk2 .bookmakers__wrapper {
+        padding:  0px 5px;
+    }
+
+    body.usa .promo-wrapper, body.uk2 .promo-wrapper {
+        background: none;
+    }
+}
+
+/* paars */
+body {
+    background: #431b38;
+    color: #000;
+    background: linear-gradient(to bottom, #431b38, #1a0714);
+}
+
+body .promo-wrapper {
+    color: #fff;
+}
+
+body .promo-wrapper .usps {
+    padding-left:  0px;
+}
+
+body .promo-wrapper .usps .fas {
+    color: #F22361;
+}
+
+body .header {
+    background: #431b38;
+    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+body .bookmakers-wrap .content-wrapper {
+    padding:  0px;
+    background: none;
+}
+
+body .bookmakers__wrapper {
+    padding:  0px;
+}
+
+body .bookmakers-title {
+    display: none;
+}
+
+body .dateline {
+    color:  #fff;
+}
+
+body .items {
+    color: #fff;
+    background: #431b38;
+}
+
+body .intro-wrap {
+    color: #fff;
+}
+
+body .foooter_main {
+    background: #1a0714;
+}
+
+body .num {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    top:  -5px;
+    left: -5px;
+    background: #F22361;
+    color:  #fff;
+    z-index: 999;
+    line-height: 35px;
+    text-align: center;
+    font-size:  21px;
+    font-weight: bold;
+    box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:981px) {
+    body .bookmakers__wrapper {
+        padding:  0px 5px;
+    }
+
+    body .promo-wrapper {
+        background: none;
+    }
+}
